@@ -7,41 +7,43 @@ import {
   CarouselCaption
 } from "reactstrap";
 
-// import gift_display_1 from "assets/gift_display_1.jpg";
-// import liquor_1 from "assets/liquor_1.jpg";
-// import sign_1 from "assets/sign_1.jpg";
-// import storefront_1 from "assets/storefront_1.jpg";
-// import wine_1 from "assets/wine_1.jpg";
+import "./style.scss";
+
+import gift_display from "assets/gift_display.jpg";
+import liquor from "assets/liquor.jpg";
+import sign from "assets/sign.jpg";
+import storefront from "assets/storefront.jpg";
+import wine from "assets/wine.jpg";
 
 const items = [
   {
-    // src: gift_display_1,
+    src: gift_display,
     altText: "Gift Set Display",
     caption: "Gift Set Display"
   },
   {
-    // src: liquor_1,
+    src: liquor,
     altText: "Liquor",
     caption: "Liquor"
   },
   {
-    // src: sign_1,
+    src: sign,
     altText: "Sign",
     caption: "Sign"
   },
   {
-    // src: storefront_1,
-    altText: "Storefromt",
-    caption: "Storefromt"
+    src: storefront,
+    altText: "Storefront",
+    caption: "Storefront"
   },
   {
-    // src: wine_1,
+    src: wine,
     altText: "Wine",
     caption: "Wine"
   }
 ];
 
-class MyCarousel extends Component {
+class CustomCarousel extends Component {
   constructor(props) {
     super(props);
     this.state = { activeIndex: 0 };
@@ -129,4 +131,4 @@ class MyCarousel extends Component {
   }
 }
 
-export default MyCarousel;
+export default CustomCarousel;

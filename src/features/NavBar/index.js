@@ -9,7 +9,7 @@ import {
   NavLink
 } from "reactstrap";
 
-class NavBar extends React.Component {
+class CustomNavbar extends React.Component {
   constructor(props) {
     super(props);
 
@@ -48,4 +48,4 @@ class NavBar extends React.Component {
   }
 }
 
-export default NavBar;
+export default CustomNavbar;

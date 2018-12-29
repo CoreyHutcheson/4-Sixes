@@ -1,8 +1,8 @@
 import React from "react";
-import NavBar from "./NavBar";
-import Carousel from "./Carousel";
+import NavBar from "features/NavBar";
+import Carousel from "features/Carousel";
 
-import "./app.scss";
+import "./style.scss";
 
 const App = () => (
   <header>
