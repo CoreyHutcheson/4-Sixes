@@ -1,0 +1,7 @@
+header {
+  display: grid;
+  width: 100vw;
+  height: 80vh;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
+}
