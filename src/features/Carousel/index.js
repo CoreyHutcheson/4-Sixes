@@ -19,27 +19,32 @@ const items = [
   {
     src: gift_display,
     altText: "Gift Set Display",
-    caption: "Gift Set Display"
+    caption: "Gift Set Display",
+    description: "Some of the various gift sets we offer!"
   },
   {
     src: liquor,
     altText: "Liquor",
-    caption: "Liquor"
+    caption: "Liquor",
+    description: "Best selection of liquor nearby!"
   },
   {
     src: sign,
     altText: "Sign",
-    caption: "Sign"
+    caption: "Sign",
+    description: "See this sign, and you're in the right place!"
   },
   {
     src: storefront,
     altText: "Storefront",
-    caption: "Storefront"
+    caption: "Storefront",
+    description: "Come on in!"
   },
   {
     src: wine,
     altText: "Wine",
-    caption: "Wine"
+    caption: "Wine",
+    description: "Want some wine?  Drop by on Tuesdays for 20% off!"
   }
 ];
 
@@ -97,7 +102,7 @@ class CustomCarousel extends Component {
         >
           <img src={item.src} alt={item.altText} />
           <CarouselCaption
-            captionText={item.caption}
+            captionText={item.description}
             captionHeader={item.caption}
           />
         </CarouselItem>

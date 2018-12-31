@@ -9,6 +9,9 @@ import {
   NavLink
 } from "reactstrap";
 
+import logo from "assets/four-sixes-logo[100x100].svg";
+import "./style.scss";
+
 class CustomNavbar extends React.Component {
   constructor(props) {
     super(props);
@@ -27,7 +30,13 @@ class CustomNavbar extends React.Component {
     return (
       <div>
         <Navbar color="dark" dark expand="md">
-          <NavbarBrand href="/">4-Sixes</NavbarBrand>
+          <NavbarBrand href="/">
+            <img
+              src={logo}
+              alt="Four Sixes Logo"
+              className="navbar-brand__logo"
+            />
+          </NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
