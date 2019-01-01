@@ -9,7 +9,7 @@ import {
   NavLink
 } from "reactstrap";
 
-import logo from "assets/four-sixes-logo[100x100].svg";
+import logo from "assets/four-sixes-logo-with-text[250x100].svg";
 import "./style.scss";
 
 class CustomNavbar extends React.Component {
