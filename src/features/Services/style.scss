@@ -1,0 +1,10 @@
+.services {
+}
+
+@media (min-width: 768px) {
+  .services {
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+  }
+}

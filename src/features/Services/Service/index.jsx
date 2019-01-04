@@ -5,8 +5,8 @@ import "./style.scss";
 function Service({ num, title, desc }) {
   return (
     <div className={`service service-${num}`}>
-      <h3>{title}</h3>
-      <p>{desc}</p>
+      <h3 className="service__title">{title}</h3>
+      <p className="service__description">{desc}</p>
     </div>
   );
 }
