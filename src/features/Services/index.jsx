@@ -24,12 +24,7 @@ function Services() {
   return (
     <div className="services">
       {services.map(item => (
-        <Service
-          key={item.key}
-          num={item.num}
-          title={item.title}
-          desc={item.desc}
-        />
+        <Service key={item.key} title={item.title} desc={item.desc} />
       ))}
     </div>
   );

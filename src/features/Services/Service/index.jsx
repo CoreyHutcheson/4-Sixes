@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import "./style.scss";
 
-function Service({ num, title, desc }) {
+function Service({ title, desc }) {
   const uniqueClass = title
     .toLowerCase()
     .trim()
@@ -17,7 +17,6 @@ function Service({ num, title, desc }) {
 }
 
 Service.propTypes = {
-  num: PropTypes.number.isRequired,
   title: PropTypes.string.isRequired,
   desc: PropTypes.string.isRequired
 };
