@@ -5,20 +5,17 @@ import "./style.scss";
 function Services() {
   const services = [
     {
-      key: "Products",
-      num: 1,
-      title: "Products",
-      desc: "Product Description"
-    },
-    {
       key: "About",
-      num: 2,
       title: "About",
       desc: "About Description"
     },
     {
+      key: "Products",
+      title: "Products",
+      desc: "Product Description"
+    },
+    {
       key: "Contact",
-      num: 3,
       title: "Contact",
       desc: "Contact Description"
     }

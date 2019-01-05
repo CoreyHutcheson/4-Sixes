@@ -1,5 +1,20 @@
 .service {
-  background: grey;
+  background: #ddd;
+  color: #000;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  min-height: 200px;
+  padding: 1em;
+  text-align: center;
+
+  // Used to seperate services from each other
+  &:not(:last-child) {
+    margin-bottom: 1em;
+  }
+
+  &__products {
+    order: -1; // Products shows first on mobile
+  }
+
   &__title {
   }
 
@@ -11,6 +26,14 @@
   .service {
     flex: 1;
     max-width: 30%;
-    padding: 1em;
+
+    // Makes all service back to same height
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+
+    &__products {
+      order: 0; // Products is in the middle on non-mobile
+    }
   }
 }
