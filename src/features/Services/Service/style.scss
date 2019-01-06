@@ -2,7 +2,7 @@
   background: rgba(238, 238, 238, 0.75);
   color: #000;
   box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
-  min-height: 200px;
+  min-height: 400px;
   padding: 1em;
   text-align: center;
 
@@ -11,17 +11,39 @@
     margin-bottom: 1em;
   }
 
-  &__products {
-    order: -1; // Products shows first on mobile
-  }
-
   &__title {
   }
 
   &__description {
   }
+
+  // Product Service Panel
+  &__products {
+    order: -1;
+    background-image: url("./images/products-image-[alcohol].jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  // Contact Service Panel
+  &__contact {
+    background-image: url("./images/contact-image-[phone].jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  // About Service Panel
+  &__about {
+    background-image: url("./images/about-image-[cards].jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
 }
 
+// Targeting non-mobile screens
 @media (min-width: 768px) {
   .service {
     flex: 1;
