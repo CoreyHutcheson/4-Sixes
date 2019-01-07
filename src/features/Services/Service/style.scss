@@ -1,3 +1,5 @@
+@import "../../../mixins";
+
 .service {
   background: rgba(238, 238, 238, 0.75);
   color: #000;
@@ -6,15 +8,27 @@
   padding: 1em;
   text-align: center;
 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
   // Used to seperate services from each other
   &:not(:last-child) {
     margin-bottom: 1em;
   }
 
   &__title {
+    font-size: 2.3rem;
+    color: white;
+    @include stroke(2, black);
   }
 
   &__description {
+    font-size: 1.2rem;
+    color: white;
+    @include stroke(2, black);
+    width: 80%;
   }
 
   // Product Service Panel

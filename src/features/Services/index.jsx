@@ -7,17 +7,19 @@ function Services() {
     {
       key: "About",
       title: "About",
-      desc: "About Description"
+      desc:
+        "It was all in the cards! Find out the story behind your favorite liquor store."
     },
     {
       key: "Products",
       title: "Products",
-      desc: "Product Description"
+      desc:
+        "What's new? What's trending? What are you buying later? Find out here!"
     },
     {
       key: "Contact",
       title: "Contact",
-      desc: "Contact Description"
+      desc: "Would you like to get in touch with us? Well here's how!"
     }
   ];
 
