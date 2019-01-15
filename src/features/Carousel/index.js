@@ -9,41 +9,41 @@ import {
 
 import "./style.scss";
 
-import gift_display from "assets/gift_display.jpg";
-import liquor from "assets/liquor.jpg";
-import sign from "assets/sign.jpg";
-import storefront from "assets/storefront.jpg";
-import wine from "assets/wine.jpg";
+import gift_display from "assets/carousel-images/gift_display.jpg";
+import liquor from "assets/carousel-images/liquor.jpg";
+import sign from "assets/carousel-images/sign.jpg";
+import storefront from "assets/carousel-images/storefront.jpg";
+import wine from "assets/carousel-images/wine.jpg";
 
 const items = [
   {
     src: gift_display,
-    altText: "Gift Set Display",
+    altText: "Various alcohol gift sets available for purchase",
     caption: "Gift Set Display",
     description: "Some of the various gift sets we offer!"
   },
   {
     src: liquor,
-    altText: "Liquor",
-    caption: "Liquor",
+    altText: "Shelf full of liquor bottles",
+    caption: "Liquor Shelf",
     description: "Best selection of liquor nearby!"
   },
   {
     src: sign,
-    altText: "Sign",
-    caption: "Sign",
+    altText: "Roadside 4-sixes store sign",
+    caption: "4-Sixes Sign",
     description: "See this sign, and you're in the right place!"
   },
   {
     src: storefront,
-    altText: "Storefront",
+    altText: "A picture of the front of the store",
     caption: "Storefront",
     description: "Come on in!"
   },
   {
     src: wine,
-    altText: "Wine",
-    caption: "Wine",
+    altText: "Picture of some of the wines for sell",
+    caption: "Wine Section",
     description: "Want some wine?  Drop by on Tuesdays for 20% off!"
   }
 ];
