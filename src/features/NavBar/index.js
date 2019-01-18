@@ -1,13 +1,6 @@
 import React from "react";
-import {
-  Collapse,
-  Navbar,
-  NavbarToggler,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink
-} from "reactstrap";
+import { Link, NavLink } from "react-router-dom";
+import { Collapse, Navbar, NavbarToggler, Nav, NavItem } from "reactstrap";
 
 import logo from "assets/four-sixes-logo-with-text[250x100].svg";
 import "./style.scss";
@@ -30,24 +23,24 @@ class CustomNavbar extends React.Component {
     return (
       <div>
         <Navbar color="dark" dark expand="md">
-          <NavbarBrand href="/">
+          <Link to="/">
             <img
               src={logo}
               alt="Four Sixes Logo"
               className="navbar-brand__logo"
             />
-          </NavbarBrand>
+          </Link>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href="/products/">Products</NavLink>
+                <NavLink to="/products">Products</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/about/">About</NavLink>
+                <NavLink to="/about">About</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/contact/">Contact</NavLink>
+                <NavLink to="/contact">Contact</NavLink>
               </NavItem>
             </Nav>
           </Collapse>

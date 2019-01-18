@@ -2,7 +2,32 @@ $ratio: 2.5;
 $logo_height: 70px;
 $logo_width: $logo_height * $ratio;
 
+.headroom-wrapper {
+  z-index: 999;
+}
+
 .navbar-brand__logo {
   width: $logo_width;
   height: $logo_height;
+}
+
+.nav-item {
+  display: block;
+  padding: 0.5rem 1rem;
+}
+
+.navbar-nav .nav-item {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.navbar-dark .navbar-nav .nav-item a {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+@media (min-width: 768px) {
+  .navbar-expand-md .navbar-nav .nav-item {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
 }
