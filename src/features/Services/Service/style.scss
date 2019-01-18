@@ -13,6 +13,12 @@
   justify-content: space-between;
   align-items: center;
 
+  transition: transform 0.1s;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
   // Used to seperate services from each other
   &:not(:last-child) {
     margin-bottom: 1em;
