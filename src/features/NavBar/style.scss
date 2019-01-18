@@ -4,6 +4,10 @@ $logo_width: $logo_height * $ratio;
 
 .headroom {
   z-index: 999 !important;
+
+  &-wrapper {
+    height: 86px !important;
+  }
 }
 
 .navbar-brand__logo {

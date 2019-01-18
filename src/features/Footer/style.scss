@@ -1,0 +1,23 @@
+.footer {
+  background-color: #343a40;
+  text-align: center;
+
+  &__panel {
+    color: white;
+  }
+
+  &__title {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+  }
+
+  &__content {
+  }
+}
+
+@media (min-width: 768px) {
+  .footer {
+    display: flex;
+    justify-content: space-around;
+  }
+}

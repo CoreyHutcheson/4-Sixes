@@ -1,5 +1,13 @@
 import React from "react";
 
-const Home = () => <div>Home</div>;
+import Carousel from "features/Carousel";
+import Services from "features/Services";
+
+const Home = () => (
+  <div className="page-home">
+    <Carousel />
+    <Services />
+  </div>
+);
 
 export default Home;
