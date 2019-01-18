@@ -1,6 +1,7 @@
 @import "../../mixins";
 
 .carousel {
+  height: 80vh;
   overflow: hidden;
 
   &-inner {

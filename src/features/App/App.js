@@ -1,4 +1,5 @@
 import React from "react";
+
 import Headroom from "react-headroom/dist";
 import NavBar from "features/NavBar";
 import Carousel from "features/Carousel";
@@ -7,13 +8,13 @@ import Services from "features/Services";
 import "./style.scss";
 
 const App = () => (
-  <div className="page">
+  <div>
     <header>
       <Headroom>
         <NavBar />
       </Headroom>
-      <Carousel />
     </header>
+    <Carousel />
     <Services />
   </div>
 );
