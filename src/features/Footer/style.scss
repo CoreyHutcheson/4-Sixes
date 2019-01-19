@@ -1,17 +1,42 @@
 .footer {
   background-color: #343a40;
   text-align: center;
+  padding: 0 1rem;
 
   &__panel {
     color: white;
+    padding: 1rem 0;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid white;
+    }
   }
 
   &__title {
-    font-size: 1.5rem;
     text-transform: uppercase;
+    display: inline-block;
+    border-bottom: 2px solid white;
   }
 
   &__content {
+    font-size: 1.2rem;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__days {
+    flex: 1;
+    text-align: right;
+    margin-right: 5px;
+  }
+
+  &__time {
+    flex: 1;
+    text-align: left;
+    margin-left: 5px;
   }
 }
 
@@ -19,5 +44,16 @@
   .footer {
     display: flex;
     justify-content: space-around;
+    padding: 1rem 0;
+
+    &__panel {
+      flex: 1;
+      padding: 0 1rem;
+
+      &:not(:last-child) {
+        border: none;
+        border-right: 1px solid white;
+      }
+    }
   }
 }

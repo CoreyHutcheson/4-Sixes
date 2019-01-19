@@ -4,37 +4,37 @@ import "./style.scss";
 
 const Panel = ({ title, children }) => (
   <div className="footer__panel">
-    <p className="footer__title">{title}</p>
-    <span className="footer__content">{children}</span>
+    <h3 className="footer__title">{title}</h3>
+    <div className="footer__content">{children}</div>
   </div>
 );
 
 const Footer = () => (
-  <div className="footer">
+  <footer className="footer">
     <Panel title="location">
-      <p>715 S Main St</p>
-      <p>Mt Pleasant, TN 38474</p>
+      <div className="footer__row">715 S Main St</div>
+      <div className="footer__row">Mt Pleasant, TN 38474</div>
     </Panel>
 
     <Panel title="contact">
-      <p>(931) 379-7371</p>
+      <div className="footer__row">(931) 379-7371</div>
     </Panel>
 
     <Panel title="hours">
-      <p>
-        <span>Mon - Thur:</span>
-        <span> 8am - 10pm</span>
-      </p>
-      <p>
-        <span>Fri - Sat:</span>
-        <span> 8 - 11pm</span>
-      </p>
-      <p>
-        <span>Sun:</span>
-        <span> 10am - 7pm</span>
-      </p>
+      <div className="footer__row">
+        <span className="footer__days">Mon - Thur:</span>
+        <span className="footer__time"> 8am - 10pm</span>
+      </div>
+      <div className="footer__row">
+        <span className="footer__days">Fri - Sat:</span>
+        <span className="footer__time"> 8am - 11pm</span>
+      </div>
+      <div className="footer__row">
+        <span className="footer__days">Sun:</span>
+        <span className="footer__time"> 10am - 7pm</span>
+      </div>
     </Panel>
-  </div>
+  </footer>
 );
 
 export default Footer;
