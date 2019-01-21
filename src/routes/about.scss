@@ -1,0 +1,28 @@
+.page-about {
+  text-align: center;
+
+  &__content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  &__map {
+    width: 90%;
+    height: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-about {
+    &__content-container {
+      flex-direction: row;
+    }
+
+    &__map {
+      width: 40%;
+      overflow: hidden;
+    }
+  }
+}

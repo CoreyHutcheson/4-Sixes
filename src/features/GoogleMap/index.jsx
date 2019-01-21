@@ -5,13 +5,11 @@ import "./style.scss";
 
 function GoogleMap() {
   return (
-    <div className="map">
-      <img
-        src={map}
-        className="map__img"
-        alt="Google Map showing location of store"
-      />
-    </div>
+    <img
+      src={map}
+      className="map__img"
+      alt="Google Map showing location of store"
+    />
   );
 }
 
