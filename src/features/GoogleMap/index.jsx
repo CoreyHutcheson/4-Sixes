@@ -1,12 +1,18 @@
 import React from "react";
-import PropTypes from "prop-types";
 
+import map from "assets/google-maps-image.JPG";
 import "./style.scss";
 
-function GoogleMap({}) {
-  return <div>I'm a google map</div>;
+function GoogleMap() {
+  return (
+    <div className="map">
+      <img
+        src={map}
+        className="map__img"
+        alt="Google Map showing location of store"
+      />
+    </div>
+  );
 }
-
-GoogleMap.propTypes = {};
 
 export default GoogleMap;
