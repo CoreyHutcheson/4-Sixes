@@ -5,10 +5,10 @@ import "./style.scss";
 function Services() {
   const services = [
     {
-      key: "About",
-      title: "About",
+      key: "History",
+      title: "History",
       desc:
-        "It was all in the cards! Find out the story behind your favorite liquor store."
+        "It was all in the cards! Discover the story behind your favorite liquor store."
     },
     {
       key: "Products",
@@ -17,9 +17,9 @@ function Services() {
         "What's new? What's trending? What are you buying later? Find out here!"
     },
     {
-      key: "Contact",
-      title: "Contact",
-      desc: "Would you like to get in touch with us? Well here's how!"
+      key: "About",
+      title: "About",
+      desc: "Want to contact us? Can't find the store? Well here's how!"
     }
   ];
 

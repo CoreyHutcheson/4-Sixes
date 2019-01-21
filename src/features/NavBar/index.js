@@ -37,10 +37,10 @@ class CustomNavbar extends React.Component {
                 <NavLink to="/products">Products</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink to="/about">About</NavLink>
+                <NavLink to="/history">History</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink to="/contact">Contact</NavLink>
+                <NavLink to="/about">About</NavLink>
               </NavItem>
             </Nav>
           </Collapse>

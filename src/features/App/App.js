@@ -10,7 +10,7 @@ import Footer from "features/Footer";
 import Home from "routes/Home";
 import Products from "routes/Products";
 import About from "routes/About";
-import Contact from "routes/Contact";
+import History from "routes/History";
 
 import "./style.scss";
 
@@ -24,8 +24,8 @@ const App = () => (
     <Switch>
       <Route exact path="/" component={Home} />
       <Route path="/products" component={Products} />
+      <Route path="/history" component={History} />
       <Route path="/about" component={About} />
-      <Route path="/contact" component={Contact} />
     </Switch>
     <Footer />
   </div>

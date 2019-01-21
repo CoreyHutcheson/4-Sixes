@@ -13,6 +13,10 @@
   justify-content: space-between;
   align-items: center;
 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
   transition: transform 0.1s;
 
   &:hover {
@@ -41,25 +45,16 @@
   &__products {
     order: -1;
     background-image: url("./images/products-image-[alcohol].jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
   }
 
-  // Contact Service Panel
-  &__contact {
-    background-image: url("./images/contact-image-[phone].jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+  // History Service Panel
+  &__history {
+    background-image: url("./images/history-image-[cards].jpg");
   }
 
   // About Service Panel
   &__about {
-    background-image: url("./images/about-image-[cards].jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-image: url("./images/about-image-[phone].jpg");
   }
 }
 
