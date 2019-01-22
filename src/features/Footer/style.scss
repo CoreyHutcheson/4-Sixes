@@ -1,7 +1,19 @@
 .footer {
   background-color: #343a40;
+  color: white;
   text-align: center;
   padding: 0 1rem;
+
+  &__about-link {
+    margin: 0;
+    padding: 1rem 0 0;
+
+    a {
+      text-decoration: none;
+      font-weight: bold;
+      color: yellow;
+    }
+  }
 
   &__panel {
     color: white;
@@ -42,9 +54,15 @@
 
 @media (min-width: 768px) {
   .footer {
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 2;
     padding: 1rem 0;
+
+    &__about-link {
+      grid-column: 1 / 4;
+      grid-row: 2 / 3;
+    }
 
     &__panel {
       flex: 1;

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import "./style.scss";
 
@@ -11,6 +12,10 @@ const Panel = ({ title, children }) => (
 
 const Footer = () => (
   <footer className="footer">
+    <p className="footer__about-link">
+      Visit the <Link to="/about/">About</Link> page for more information
+    </p>
+
     <Panel title="location">
       <div className="footer__row">715 S Main St</div>
       <div className="footer__row">Mt Pleasant, TN 38474</div>
