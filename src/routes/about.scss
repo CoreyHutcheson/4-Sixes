@@ -1,28 +1,19 @@
 .page-about {
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: auto;
+  justify-items: center;
   text-align: center;
 
-  &__content-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+  padding: 1rem;
+
+  &__title {
   }
 
   &__map {
-    width: 90%;
-    height: auto;
+    max-width: 700px;
   }
 }
 
 @media (min-width: 768px) {
-  .page-about {
-    &__content-container {
-      flex-direction: row;
-    }
-
-    &__map {
-      width: 40%;
-      overflow: hidden;
-    }
-  }
 }
