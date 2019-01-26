@@ -8,25 +8,27 @@ const productList = [
     name: "Grey Goose",
     img: greyGoose,
     type: "Vodka",
-    desc: "Top shelf vodka"
+    desc:
+      "A Single-origin French vodka, traceable from field to bottle for a naturally rich and full-bodied taste."
   },
   {
     name: "Jack Daniels",
     img: jackDaniels,
     type: "Whiskey",
-    desc: "The premiere Tennessee Whiskey"
+    desc:
+      "Known for its smooth, sweet and mild palate that opens with flavors of caramel, complemented by hints of spice, nuts and a touch of smoke"
   },
   {
     name: "Amber Falls",
     img: amberFalls,
     type: "Wine",
-    desc: "Superb local wine"
+    desc: "Superb local wine from the vineyards in Hampshire, TN."
   },
   {
     name: "Captain Morgan",
     img: captainMorgan,
     type: "Rum",
-    desc: "Unleash your pirate side"
+    desc: "To Life, Love and Loot."
   }
 ];
 
