@@ -6,7 +6,7 @@ import "./style.scss";
 const ProductPanel = () =>
   productList.map(product => {
     return (
-      <div className="product">
+      <div key={product.name} className="product">
         <img className="product__img" src={product.img} alt={product.name} />
         <div className="product__name">{product.name}</div>
         <div className="product__type">{product.type}</div>

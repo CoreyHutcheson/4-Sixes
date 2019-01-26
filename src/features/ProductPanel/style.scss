@@ -4,7 +4,7 @@ $panel_background: #e5e5e5;
 .product {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3);
+  // grid-template-rows: repeat(3);
   // width: 300px;
   min-height: 100px;
   grid-gap: $spacing;
@@ -42,9 +42,13 @@ $panel_background: #e5e5e5;
     padding: 8px;
     margin-top: 10px;
 
+    p {
+      margin: 1rem 0;
+    }
+
     span {
       position: absolute;
-      top: -8px;
+      top: -12px;
       left: 10px;
       padding: 0 3px;
       background: #e5e5e5;
