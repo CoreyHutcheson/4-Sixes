@@ -1,5 +1,12 @@
 import React from "react";
 
-const Products = () => <div>Products</div>;
+import ProductPanel from "features/ProductPanel";
+import "./products.scss";
+
+const Products = () => (
+  <div className="page-products">
+    <ProductPanel />
+  </div>
+);
 
 export default Products;

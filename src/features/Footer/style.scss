@@ -60,7 +60,6 @@
   .footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 2;
     padding: 1rem 0;
 
     &__about-link {

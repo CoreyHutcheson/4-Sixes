@@ -1,0 +1,54 @@
+$spacing: 5px;
+$panel_background: #e5e5e5;
+
+.product {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3);
+  // width: 300px;
+  min-height: 100px;
+  grid-gap: $spacing;
+  padding: $spacing;
+  background: $panel_background;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+
+  &__img {
+    grid-column: span 1;
+    grid-row: span 3;
+    object-fit: cover;
+  }
+
+  &__name {
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+    overflow: hidden;
+    font-weight: 600;
+  }
+
+  &__type {
+    grid-column: 4 / 5;
+    grid-row: 1 / 2;
+    font-style: italic;
+    justify-self: end;
+  }
+
+  &__desc {
+    position: relative;
+    grid-column: 2 / 5;
+    grid-row: 2 / 4;
+    // overflow: hidden;
+    font-size: 0.9rem;
+    border: 1px solid black;
+    padding: 8px;
+    margin-top: 10px;
+
+    span {
+      position: absolute;
+      top: -8px;
+      left: 10px;
+      padding: 0 3px;
+      background: #e5e5e5;
+      font-weight: 600;
+    }
+  }
+}
