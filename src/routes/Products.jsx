@@ -5,7 +5,10 @@ import "./products.scss";
 
 const Products = () => (
   <div className="page-products">
-    <ProductPanel />
+    <div className="page-products__products-grid">
+      <ProductPanel />
+    </div>
+    <div className="page-products__more">Plus More!</div>
   </div>
 );
 
