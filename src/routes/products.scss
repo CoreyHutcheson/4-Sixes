@@ -1,3 +1,9 @@
+.page-products {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .page-products__products-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
