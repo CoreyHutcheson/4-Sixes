@@ -3,14 +3,14 @@ import { Switch, Route } from "react-router-dom";
 
 // Components needed on every page (src/features)
 import Headroom from "react-headroom/dist";
-import NavBar from "features/NavBar";
-import Footer from "features/Footer";
+import NavBar from "components/nav-bar";
+import Footer from "components/footer";
 
 // Routes (src/routes)
-import Home from "routes/Home";
-import Products from "routes/Products";
-import About from "routes/About";
-import History from "routes/History";
+import Home from "routes/home";
+import Products from "routes/products";
+import About from "routes/about";
+import History from "routes/history";
 
 import "./style.scss";
 

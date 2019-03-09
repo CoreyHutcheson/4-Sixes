@@ -1,6 +1,6 @@
 import React from "react";
 
-import ProductPanel from "features/ProductPanel";
+import ProductPanel from "components/product-panel";
 import "./products.scss";
 
 const Products = () => (

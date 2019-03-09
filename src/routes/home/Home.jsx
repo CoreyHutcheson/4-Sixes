@@ -1,7 +1,7 @@
 import React from "react";
 
-import Carousel from "features/Carousel";
-import Services from "features/Services";
+import Carousel from "components/carousel";
+import Services from "components/services";
 
 const Home = () => (
   <div className="page-home">

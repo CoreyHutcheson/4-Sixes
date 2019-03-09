@@ -1,5 +1,6 @@
 import React from "react";
-import Service from "features/Services/Service";
+
+import Service from "./service";
 import "./style.scss";
 
 function Services() {

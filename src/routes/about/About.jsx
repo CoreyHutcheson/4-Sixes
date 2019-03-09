@@ -1,6 +1,6 @@
 import React from "react";
 
-import GoogleMap from "features/GoogleMap";
+import GoogleMap from "components/google-map";
 import "./about.scss";
 
 const About = () => (
