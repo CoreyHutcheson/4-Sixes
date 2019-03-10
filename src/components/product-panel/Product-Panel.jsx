@@ -1,10 +1,10 @@
 import React from "react";
 
-import productList from "./productList.js";
+import productData from "./product-data.js";
 import "./style.scss";
 
 const ProductPanel = () =>
-  productList.map(product => {
+  productData.map(product => {
     return (
       <div key={product.name} className="product">
         <img className="product__img" src={product.img} alt={product.name} />
