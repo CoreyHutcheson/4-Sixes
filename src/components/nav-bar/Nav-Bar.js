@@ -2,7 +2,7 @@ import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import { Collapse, Navbar, NavbarToggler, Nav, NavItem } from "reactstrap";
 
-import logo from "assets/four-sixes-logo-with-text[250x100].svg";
+import logo from "assets/images/logo/four-sixes-logo-with-text[250x100].svg";
 import "./style.scss";
 
 class CustomNavbar extends React.Component {

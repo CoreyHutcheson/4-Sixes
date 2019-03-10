@@ -1,7 +1,7 @@
-import amberFalls from "assets/products/amber-falls.png";
-import captainMorgan from "assets/products/captain-morgan.jpeg";
-import greyGoose from "assets/products/grey-goose.jpg";
-import jackDaniels from "assets/products/jack-daniels.jpeg";
+import amberFalls from "assets/images/products/amber-falls.png";
+import captainMorgan from "assets/images/products/captain-morgan.jpeg";
+import greyGoose from "assets/images/products/grey-goose.jpg";
+import jackDaniels from "assets/images/products/jack-daniels.jpeg";
 
 const productList = [
   {

@@ -9,11 +9,11 @@ import {
 
 import "./style.scss";
 
-import gift_display from "assets/carousel-images/gift_display.jpg";
-import liquor from "assets/carousel-images/liquor.jpg";
-import sign from "assets/carousel-images/sign.jpg";
-import storefront from "assets/carousel-images/storefront.jpg";
-import wine from "assets/carousel-images/wine.jpg";
+import gift_display from "assets/images/carousel-images/gift_display.jpg";
+import liquor from "assets/images/carousel-images/liquor.jpg";
+import sign from "assets/images/carousel-images/sign.jpg";
+import storefront from "assets/images/carousel-images/storefront.jpg";
+import wine from "assets/images/carousel-images/wine.jpg";
 
 const items = [
   {
