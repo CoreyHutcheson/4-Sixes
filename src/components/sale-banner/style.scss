@@ -1,0 +1,20 @@
+.sales-banner {
+  background: #ffff00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+
+  &__link {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: black;
+
+    &:hover {
+      color: black;
+      border-bottom: 2px solid black;
+      font-size: 1.2rem;
+    }
+  }
+}
