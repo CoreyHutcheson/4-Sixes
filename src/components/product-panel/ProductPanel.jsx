@@ -1,6 +1,6 @@
 import React from "react";
 
-import productData from "./product-data.js";
+import productData from "./productData.js";
 import "./style.scss";
 
 const ProductPanel = () =>

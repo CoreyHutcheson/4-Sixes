@@ -1,1 +1,1 @@
-export { default } from "./Product-Panel";
+export { default } from "./ProductPanel";
