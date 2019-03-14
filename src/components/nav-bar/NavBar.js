@@ -23,7 +23,7 @@ class CustomNavbar extends React.Component {
     return (
       <div>
         <Navbar color="dark" dark expand="md">
-          <Link to="/">
+          <Link to="/" onClick={this.toggle}>
             <img
               src={logo}
               alt="Four Sixes Logo"
@@ -34,13 +34,19 @@ class CustomNavbar extends React.Component {
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink to="/products">Products</NavLink>
+                <NavLink to="/products" onClick={this.toggle}>
+                  Products
+                </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink to="/history">History</NavLink>
+                <NavLink to="/history" onClick={this.toggle}>
+                  History
+                </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink to="/about">About</NavLink>
+                <NavLink to="/about" onClick={this.toggle}>
+                  About
+                </NavLink>
               </NavItem>
             </Nav>
           </Collapse>
