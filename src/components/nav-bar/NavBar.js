@@ -10,20 +10,46 @@ class CustomNavbar extends React.Component {
     super(props);
 
     this.toggle = this.toggle.bind(this);
+    this.closeNavbar = this.closeNavbar.bind(this);
+    this.handleClickOutside = this.handleClickOutside.bind(this);
+
     this.state = {
       isOpen: false
     };
   }
+
+  componentWillMount() {
+    document.addEventListener("mousedown", this.handleClickOutside);
+  }
+
+  componentWillUnmount() {
+    document.removeEventListener("mousedown", this.handleClickOutside);
+  }
+
   toggle() {
     this.setState({
       isOpen: !this.state.isOpen
     });
   }
+
+  closeNavbar() {
+    this.setState({
+      isOpen: false
+    });
+  }
+
+  handleClickOutside(event) {
+    const t = event.target;
+    if (this.state.isOpen && !t.classList.contains("navbar-toggler")) {
+      this.closeNavbar();
+    }
+  }
+
   render() {
     return (
       <div>
         <Navbar color="dark" dark expand="md">
-          <Link to="/" onClick={this.toggle}>
+          <Link to="/" onClick={this.closeNavbar}>
             <img
               src={logo}
               alt="Four Sixes Logo"
@@ -34,17 +60,17 @@ class CustomNavbar extends React.Component {
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink to="/products" onClick={this.toggle}>
+                <NavLink to="/products" onClick={this.closeNavbar}>
                   Products
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink to="/history" onClick={this.toggle}>
+                <NavLink to="/history" onClick={this.closeNavbar}>
                   History
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink to="/about" onClick={this.toggle}>
+                <NavLink to="/about" onClick={this.closeNavbar}>
                   About
                 </NavLink>
               </NavItem>
