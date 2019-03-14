@@ -1,20 +1,6 @@
-/**
- * Imports all from specified folder
- */
-function importAll(r) {
-  let obj = {};
-  const removeFileExtension = str => str.replace(/\.\w+$/, "");
-
-  r.keys().map(
-    (item, index) =>
-      (obj[removeFileExtension(item.replace("./", ""))] = r(item))
-  );
-
-  return obj;
-}
+import importAll from "utils/js/importAll";
 
 /**
- * All images in 'assets/images/products' folder
  * Images can be accesses via "images['key-name']"
  * Example: images['amber-falls']
  */
@@ -23,7 +9,6 @@ const images = importAll(
 );
 
 /**
- *
  * @param {Array} Array of Arrays
  * Returns array of objects {name, img, type, desc}
  */
