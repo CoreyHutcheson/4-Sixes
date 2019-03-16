@@ -11,20 +11,11 @@ class CustomNavbar extends React.Component {
 
     this.toggle = this.toggle.bind(this);
     this.closeNavbar = this.closeNavbar.bind(this);
-    // this.handleClickOutside = this.handleClickOutside.bind(this);
 
     this.state = {
       isOpen: false,
     };
   }
-
-  // componentWillMount() {
-  //   document.addEventListener("mousedown", this.handleClickOutside);
-  // }
-
-  // componentWillUnmount() {
-  //   document.removeEventListener("mousedown", this.handleClickOutside);
-  // }
 
   toggle() {
     this.setState({
@@ -37,13 +28,6 @@ class CustomNavbar extends React.Component {
       isOpen: false,
     });
   }
-
-  // handleClickOutside(event) {
-  //   const t = event.target;
-  //   if (this.state.isOpen && !t.classList.contains("navbar-toggler")) {
-  //     this.closeNavbar();
-  //   }
-  // }
 
   render() {
     return (
