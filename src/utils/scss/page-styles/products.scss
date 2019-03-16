@@ -1,0 +1,22 @@
+.page-products {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.page-products__products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: max-content;
+  gap: 10px 20px;
+  justify-items: center;
+  padding: 10px;
+}
+
+.page-products__more {
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 1rem 0;
+}
