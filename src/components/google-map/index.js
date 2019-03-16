@@ -1,1 +1,1 @@
-export { default } from "./GoogleMap.jsx";
+export { default } from "./GoogleMap";
