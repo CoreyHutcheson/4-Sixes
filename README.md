@@ -1,4 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a website for 4-Sixes Liquor Store - created by Corey Hutcheson
 
 ## Available Scripts
 
