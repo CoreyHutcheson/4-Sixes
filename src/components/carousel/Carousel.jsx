@@ -4,48 +4,48 @@ import {
   CarouselItem,
   CarouselControl,
   CarouselIndicators,
-  CarouselCaption
+  CarouselCaption,
 } from "reactstrap";
 
 import "./style.scss";
 
-import gift_display from "assets/images/carousel-images/gift_display.jpg";
-import liquor from "assets/images/carousel-images/liquor.jpg";
-import sign from "assets/images/carousel-images/sign.jpg";
-import storefront from "assets/images/carousel-images/storefront.jpg";
-import wine from "assets/images/carousel-images/wine.jpg";
+import gift_display from "src/assets/images/carousel-images/gift_display.jpg";
+import liquor from "src/assets/images/carousel-images/liquor.jpg";
+import sign from "src/assets/images/carousel-images/sign.jpg";
+import storefront from "src/assets/images/carousel-images/storefront.jpg";
+import wine from "src/assets/images/carousel-images/wine.jpg";
 
 const items = [
   {
     src: gift_display,
     altText: "Various alcohol gift sets available for purchase",
     caption: "Gift Set Display",
-    description: "Some of the various gift sets we offer!"
+    description: "Some of the various gift sets we offer!",
   },
   {
     src: liquor,
     altText: "Shelf full of liquor bottles",
     caption: "Liquor Shelf",
-    description: "Best selection of liquor nearby!"
+    description: "Best selection of liquor nearby!",
   },
   {
     src: sign,
     altText: "Roadside 4-sixes store sign",
     caption: "4-Sixes Sign",
-    description: "See this sign, and you're in the right place!"
+    description: "See this sign, and you're in the right place!",
   },
   {
     src: storefront,
     altText: "A picture of the front of the store",
     caption: "Storefront",
-    description: "Come on in!"
+    description: "Come on in!",
   },
   {
     src: wine,
     altText: "Picture of some of the wines for sell",
     caption: "Wine Section",
-    description: "Want some wine?  Drop by on Tuesdays for 20% off!"
-  }
+    description: "Want some wine?  Drop by on Tuesdays for 20% off!",
+  },
 ];
 
 class CustomCarousel extends Component {
