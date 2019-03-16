@@ -1,8 +1,8 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "gatsby";
 import { Collapse, Navbar, NavbarToggler, Nav, NavItem } from "reactstrap";
 
-import logo from "assets/images/logo/four-sixes-logo-with-text[250x100].svg";
+import logo from "src/assets/images/logo/four-sixes-logo-with-text[250x100].svg";
 import "./style.scss";
 
 class CustomNavbar extends React.Component {
@@ -14,7 +14,7 @@ class CustomNavbar extends React.Component {
     this.handleClickOutside = this.handleClickOutside.bind(this);
 
     this.state = {
-      isOpen: false
+      isOpen: false,
     };
   }
 
@@ -28,13 +28,13 @@ class CustomNavbar extends React.Component {
 
   toggle() {
     this.setState({
-      isOpen: !this.state.isOpen
+      isOpen: !this.state.isOpen,
     });
   }
 
   closeNavbar() {
     this.setState({
-      isOpen: false
+      isOpen: false,
     });
   }
 
@@ -60,19 +60,31 @@ class CustomNavbar extends React.Component {
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink to="/products" onClick={this.closeNavbar}>
+                <Link
+                  to="/products"
+                  activeClassName="active"
+                  onClick={this.closeNavbar}
+                >
                   Products
-                </NavLink>
+                </Link>
               </NavItem>
               <NavItem>
-                <NavLink to="/history" onClick={this.closeNavbar}>
+                <Link
+                  to="/history"
+                  activeClassName="active"
+                  onClick={this.closeNavbar}
+                >
                   History
-                </NavLink>
+                </Link>
               </NavItem>
               <NavItem>
-                <NavLink to="/about" onClick={this.closeNavbar}>
+                <Link
+                  to="/about"
+                  activeClassName="active"
+                  onClick={this.closeNavbar}
+                >
                   About
-                </NavLink>
+                </Link>
               </NavItem>
             </Nav>
           </Collapse>
