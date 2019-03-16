@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Link } from "react-router-dom";
+import { Link } from "gatsby";
 
 import "./style.scss";
 
@@ -11,7 +11,10 @@ function Service({ title, desc }) {
     .replace(/[ ]/g, "-");
 
   return (
-    <Link to={`${title}`} className={`service service__${uniqueClass}`}>
+    <Link
+      to={`${title.toLowerCase()}`}
+      className={`service service__${uniqueClass}`}
+    >
       <h3 className="service__title">{title}</h3>
       <p className="service__description">{desc}</p>
     </Link>
@@ -20,7 +23,7 @@ function Service({ title, desc }) {
 
 Service.propTypes = {
   title: PropTypes.string.isRequired,
-  desc: PropTypes.string.isRequired
+  desc: PropTypes.string.isRequired,
 };
 
 export default Service;

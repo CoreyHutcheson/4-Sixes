@@ -1,4 +1,4 @@
-@import "utils/scss/_mixins.scss";
+@import "src/utils/scss/_mixins.scss";
 
 .service {
   background: rgba(238, 238, 238, 0.75);
@@ -44,17 +44,17 @@
   // Product Service Panel
   &__products {
     order: -1;
-    background-image: url("~assets/images/services/products-image-[alcohol].jpg");
+    background-image: url("~src/assets/images/services/products-image-[alcohol].jpg");
   }
 
   // History Service Panel
   &__history {
-    background-image: url("~assets/images/services/history-image-[cards].jpg");
+    background-image: url("~src/assets/images/services/history-image-[cards].jpg");
   }
 
   // About Service Panel
   &__about {
-    background-image: url("~assets/images/services/about-image-[phone].jpg");
+    background-image: url("~src/assets/images/services/about-image-[phone].jpg");
   }
 }
 
