@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop",
-    "dev-m": "gatsby develop -H 0.0.0.0",
+    "develop": "gatsby develop -o",
+    "dev-m": "gatsby develop -o -H 0.0.0.0",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "test": "echo \"Write test! -> https://gatsby.dev/unit-test\""
