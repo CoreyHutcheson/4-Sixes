@@ -3,8 +3,10 @@ import React from "react";
 import productData from "./productData.js";
 import "./style.scss";
 
-const ProductPanel = () =>
-  productData.map(product => {
+const ProductPanel = ({ newProducts }) => {
+  const products = productData.filter(obj => obj.newProduct === newProducts);
+
+  return products.map(product => {
     return (
       <div key={product.name} className="product">
         <img className="product__img" src={product.img} alt={product.name} />
@@ -17,5 +19,6 @@ const ProductPanel = () =>
       </div>
     );
   });
+};
 
 export default ProductPanel;
