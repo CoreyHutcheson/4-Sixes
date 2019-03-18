@@ -6,7 +6,7 @@ import "src/utils/scss/page-styles/about.scss";
 const About = () => (
   <PageWrapper>
     <div className="page-about">
-      <form
+      {/* <form
         name="contact"
         method="post"
         data-netlify="true"
@@ -34,7 +34,7 @@ const About = () => (
             <input type="reset" value="Clear" />
           </li>
         </ul>
-      </form>
+      </form> */}
     </div>
   </PageWrapper>
 );
