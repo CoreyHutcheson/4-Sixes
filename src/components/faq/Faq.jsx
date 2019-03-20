@@ -14,11 +14,14 @@ const FaqElement = ({ question, answer }) => (
 
 function Faq() {
   return (
-    <ul className="faq">
-      {data.faq.map(el => (
-        <FaqElement question={el.question} answer={el.answer} />
-      ))}
-    </ul>
+    <>
+      <h2>Event FAQ</h2>
+      <ul className="faq">
+        {data.faq.map(el => (
+          <FaqElement question={el.question} answer={el.answer} />
+        ))}
+      </ul>
+    </>
   );
 }
 
