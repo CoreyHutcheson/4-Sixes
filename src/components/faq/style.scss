@@ -1,0 +1,25 @@
+$whitespace: 1rem;
+
+.faq {
+  list-style: none;
+  margin: 0;
+  padding: $whitespace;
+  background: pink;
+  text-align: left;
+
+  &__field-container {
+    &:not(:last-of-type) {
+      margin-bottom: $whitespace;
+    }
+  }
+
+  &__question {
+    font-weight: 600;
+    font-size: 1.1rem;
+  }
+
+  &__answer {
+    margin: 0;
+    padding-left: 2rem;
+  }
+}
