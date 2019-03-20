@@ -1,11 +1,20 @@
+@import "src/utils/scss/variables";
+
 $whitespace: 10px;
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 .form {
   width: 80%;
   min-width: 300px;
   max-width: 500px;
-  background: #eee;
-  border: 1px solid #aaa;
+  background: $color__secondary-background;
+  border: 1px solid $color__border;
   border-radius: 5px;
   box-shadow: 3px 3px 7px 0px rgba(0, 0, 0, 0.75);
   display: grid;
