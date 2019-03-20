@@ -1,0 +1,16 @@
+{
+  "faq": [
+    {
+      "question": "What does 2 + 2 equal?",
+      "answer": "The answer is 4."
+    },
+    {
+      "question": "What is the square root of 81?",
+      "answer": "The square root of 81 is 9."
+    },
+    {
+      "question": "More math questions?",
+      "answer": "Please no!"
+    }
+  ]
+}
