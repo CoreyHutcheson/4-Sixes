@@ -17,4 +17,4 @@ This project is a website for 4-Sixes Liquor Store - created by Corey Hutcheson
   - [ ] Expanding Beer Selection
   - [ ] Non-Alcoholic items
     - picture showcasing the various items
-  - [ ] Google Maps API
+  - [x] Google Maps API
