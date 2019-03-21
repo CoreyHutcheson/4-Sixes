@@ -4,9 +4,9 @@ This project is a website for 4-Sixes Liquor Store - created by Corey Hutcheson
 
 - [ ] Event Banner for upcoming events
 - Event Page
-  - [ ] Email form
+  - [x] Email form
   - [ ] Taste Testing information
-  - [ ] FAQ
+  - [x] FAQ
     - How much alcohol for a party of 20 people?
     - etc
 - About Page

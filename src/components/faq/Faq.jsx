@@ -18,7 +18,7 @@ function Faq() {
       <h2>Event FAQ</h2>
       <ul className="faq">
         {data.faq.map(el => (
-          <FaqElement question={el.question} answer={el.answer} />
+          <FaqElement key={el.key} question={el.question} answer={el.answer} />
         ))}
       </ul>
     </>
