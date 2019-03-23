@@ -1,9 +1,13 @@
-.sales-banner {
+.banner {
   background: #ffff00;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 40px;
+
+  &:nth-child(even) {
+    background: darken(#ffff00, 10%);
+  }
 
   &__link {
     text-decoration: none;
