@@ -1,0 +1,17 @@
+[
+  {
+    "question": "How much notice is needed to order a keg?",
+    "answer": "Two weeks notice is necessary.",
+    "key": 1
+  },
+  {
+    "question": "What is the square root of 81?",
+    "answer": "The square root of 81 is 9.",
+    "key": 2
+  },
+  {
+    "question": "More math questions?",
+    "answer": "Please no!",
+    "key": 3
+  }
+]
