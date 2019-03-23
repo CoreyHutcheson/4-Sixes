@@ -7,12 +7,13 @@ $whitespace: 10px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  min-width: calc(300px - 2rem);
+  max-width: 500px;
 }
 
 .form {
-  width: 80%;
-  min-width: 300px;
-  max-width: 500px;
+  width: 100%;
   background: $color__secondary-background;
   border: 1px solid $color__border;
   border-radius: 5px;
@@ -24,7 +25,7 @@ $whitespace: 10px;
   text-align: left;
 
   &__field-container {
-    grid-column: span 1;
+    grid-column: span 2;
   }
 
   &__field-container--full {
@@ -51,6 +52,18 @@ $whitespace: 10px;
   &__button {
     margin: 0 10px;
     padding: 5px 15px;
+  }
+}
+
+@media (min-width: 500px) {
+  .form {
+    &__field-container {
+      grid-column: span 1;
+    }
+
+    &__field-container--full {
+      grid-column: span 2;
+    }
   }
 }
 
