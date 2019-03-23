@@ -33,10 +33,8 @@ export const query = graphql`
       edges {
         node {
           key
-          start_date
           end_date
           content_short
-          content_full
         }
       }
     }
