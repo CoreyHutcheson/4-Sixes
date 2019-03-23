@@ -1,7 +1,7 @@
 import React from "react";
+import { useStaticQuery, graphql } from "gatsby";
 
 import "./style.scss";
-import data from "./data.json";
 
 const FaqElement = ({ question, answer }) => (
   <li className="faq__field-container">
@@ -13,12 +13,30 @@ const FaqElement = ({ question, answer }) => (
 );
 
 function Faq() {
+  const data = useStaticQuery(graphql`
+    query FaqQuery {
+      allFaqJson {
+        edges {
+          node {
+            question
+            answer
+            key
+          }
+        }
+      }
+    }
+  `).allFaqJson.edges;
+
   return (
     <>
       <h2>Event FAQ</h2>
       <ul className="faq">
-        {data.faq.map(el => (
-          <FaqElement key={el.key} question={el.question} answer={el.answer} />
+        {data.map(el => (
+          <FaqElement
+            key={el.node.key}
+            question={el.node.question}
+            answer={el.node.answer}
+          />
         ))}
       </ul>
     </>
