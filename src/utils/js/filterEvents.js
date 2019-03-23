@@ -1,5 +1,5 @@
-function filterEvents(event) {
-  return new Date(event.start_date) > new Date();
+function filterEvents({ node }) {
+  return new Date(node.start_date) > new Date();
 }
 
 export default filterEvents;

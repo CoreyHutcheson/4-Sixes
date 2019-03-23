@@ -8,10 +8,10 @@ import Banner from "src/components/banner";
 import filterEvents from "src/utils/js/filterEvents";
 
 const Home = ({ data }) => {
-  const events = data.dataJson.events;
+  const events = data.allEventsJson.edges;
   const eventBanners = events.filter(filterEvents).map(e => (
-    <Banner key={e.key} link="about">
-      {e["content_short"]}
+    <Banner key={e.node.key} link="about">
+      {e.node.content_short}
     </Banner>
   ));
 
@@ -29,13 +29,15 @@ const Home = ({ data }) => {
 
 export const query = graphql`
   query HomePageQuery {
-    dataJson {
-      events {
-        key
-        start_date
-        end_date
-        content_short
-        content_full
+    allEventsJson {
+      edges {
+        node {
+          key
+          start_date
+          end_date
+          content_short
+          content_full
+        }
       }
     }
   }
