@@ -12,7 +12,7 @@ function Service({ title, desc }) {
 
   return (
     <Link
-      to={`${title.toLowerCase()}`}
+      to={`/${title.toLowerCase()}`}
       className={`service service__${uniqueClass}`}
     >
       <h3 className="service__title">{title}</h3>
