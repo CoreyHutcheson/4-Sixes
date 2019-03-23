@@ -6,7 +6,7 @@ import "./style.scss";
 const MarkerText = ({ text }) => <span className="marker-text">{text}</span>;
 
 const GoogleMap = () => {
-  const apiKey = `${process.env.GATSBY_GOOGLE_MAP_API_KEY}`;
+  const apiKey = `${process.env.GOOGLE_MAP_API_KEY}`;
   const locations = {
     "4-sixes": {
       lat: 35.526652,
