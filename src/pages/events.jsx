@@ -6,7 +6,7 @@ import "src/utils/scss/page-styles/events.scss";
 const EventsPage = () => {
   return (
     <PageWrapper>
-      <div class="page-content page-events">Events</div>
+      <div className="page-content page-events">Events</div>
     </PageWrapper>
   );
 };

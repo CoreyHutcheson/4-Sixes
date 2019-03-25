@@ -8,17 +8,15 @@ import "./style.scss";
 
 function PageWrapper({ children }) {
   return (
-    <div id="root">
-      <div>
-        <header>
-          <Headroom>
-            <NavBar />
-          </Headroom>
-        </header>
-        {children}
-        <Footer />
-      </div>
-    </div>
+    <>
+      <header>
+        <Headroom>
+          <NavBar />
+        </Headroom>
+      </header>
+      {children}
+      <Footer />
+    </>
   );
 }
 

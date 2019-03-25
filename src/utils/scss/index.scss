@@ -1,19 +1,13 @@
-html {
-  height: 100vh;
-}
-
-body {
+html,
+body,
+#___gatsby {
   min-height: 100vh;
 }
 
-#root {
+#___gatsby > div {
   min-height: 100vh;
-
-  > div {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-  }
+  display: flex;
+  flex-direction: column;
 }
 
 .page-content {
