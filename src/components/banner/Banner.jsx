@@ -4,7 +4,7 @@ import { Link } from "gatsby";
 
 import "./style.scss";
 
-function Banner({ link, children, otherProp }) {
+function Banner({ link, children }) {
   return (
     <div className="banner">
       <Link to={`/${link.toLowerCase()}`} className="banner__link">
@@ -15,7 +15,7 @@ function Banner({ link, children, otherProp }) {
 }
 
 Banner.propTypes = {
-  link: PropTypes.string,
+  link: PropTypes.string.isRequired,
   children: PropTypes.node.isRequired,
 };
 
