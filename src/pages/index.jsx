@@ -9,7 +9,7 @@ import EventBanner from "src/components/event-banner";
 const Home = () => {
   return (
     <PageWrapper>
-      <div className="page-home">
+      <div className="page-content page-home">
         <Banner link="about">SAVE $! Check out our Sales!</Banner>
         <EventBanner />
         <Carousel />

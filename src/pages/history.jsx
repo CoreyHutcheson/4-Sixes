@@ -9,7 +9,7 @@ import "src/utils/scss/page-styles/history.scss";
 
 const History = () => (
   <PageWrapper>
-    <div className="page-history">
+    <div className="page-content page-history">
       <div className="page-history__img-container">
         <img src={cards} alt="Pocket sixes cards." />
       </div>

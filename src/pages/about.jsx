@@ -8,7 +8,7 @@ import "src/utils/scss/page-styles/about.scss";
 
 const About = () => (
   <PageWrapper>
-    <div className="page-about">
+    <div className="page-content page-about">
       <ContactForm />
       <FAQ />
       <GoogleMap />
