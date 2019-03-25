@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { Link } from "gatsby";
 import { Collapse, Navbar, NavbarToggler, Nav, NavItem } from "reactstrap";
 
@@ -6,7 +7,7 @@ import logo from "src/assets/images/logo/four-sixes-logo-with-text[250x100].svg"
 import "./style.scss";
 
 const CustomNavItem = ({ title, handleClick }) => {
-  const path = title.toLowerCase();
+  const path = `/${title.toLowerCase()}`;
   title = title.charAt(0).toUpperCase() + title.slice(1).toLowerCase();
 
   return (
@@ -43,6 +44,8 @@ class CustomNavbar extends React.Component {
   }
 
   render() {
+    console.log(this.closeNavbar);
+
     return (
       <div>
         <Navbar color="dark" dark expand="md">
@@ -67,5 +70,10 @@ class CustomNavbar extends React.Component {
     );
   }
 }
+
+CustomNavItem.propTypes = {
+  title: PropTypes.string.isRequired,
+  handleClick: PropTypes.func.isRequired,
+};
 
 export default CustomNavbar;
