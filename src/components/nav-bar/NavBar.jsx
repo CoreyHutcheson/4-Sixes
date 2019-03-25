@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
 import { Link } from "gatsby";
 import { Collapse, Navbar, NavbarToggler, Nav, NavItem } from "reactstrap";
@@ -19,57 +19,34 @@ const CustomNavItem = ({ title, handleClick }) => {
   );
 };
 
-class CustomNavbar extends React.Component {
-  constructor(props) {
-    super(props);
+const CustomNavbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const toggle = () => setIsOpen(!isOpen);
+  const closeNavbar = () => setIsOpen(false);
 
-    this.toggle = this.toggle.bind(this);
-    this.closeNavbar = this.closeNavbar.bind(this);
-
-    this.state = {
-      isOpen: false,
-    };
-  }
-
-  toggle() {
-    this.setState({
-      isOpen: !this.state.isOpen,
-    });
-  }
-
-  closeNavbar() {
-    this.setState({
-      isOpen: false,
-    });
-  }
-
-  render() {
-    console.log(this.closeNavbar);
-
-    return (
-      <div>
-        <Navbar color="dark" dark expand="md">
-          <Link to="/" onClick={this.closeNavbar}>
-            <img
-              src={logo}
-              alt="Four Sixes Logo"
-              className="navbar-brand__logo"
-            />
-          </Link>
-          <NavbarToggler onClick={this.toggle} />
-          <Collapse isOpen={this.state.isOpen} navbar>
-            <Nav className="ml-auto" navbar>
-              <CustomNavItem title="Events" handleClick={this.closeNavBar} />
-              <CustomNavItem title="Products" handleClick={this.closeNavBar} />
-              <CustomNavItem title="History" handleClick={this.closeNavBar} />
-              <CustomNavItem title="About" handleClick={this.closeNavBar} />
-            </Nav>
-          </Collapse>
-        </Navbar>
-      </div>
-    );
-  }
-}
+  return (
+    <div>
+      <Navbar color="dark" dark expand="md">
+        <Link to="/" onClick={closeNavbar}>
+          <img
+            src={logo}
+            alt="Four Sixes Logo"
+            className="navbar-brand__logo"
+          />
+        </Link>
+        <NavbarToggler onClick={toggle} />
+        <Collapse isOpen={isOpen} navbar>
+          <Nav className="ml-auto" navbar>
+            <CustomNavItem title="Events" handleClick={closeNavbar} />
+            <CustomNavItem title="Products" handleClick={closeNavbar} />
+            <CustomNavItem title="History" handleClick={closeNavbar} />
+            <CustomNavItem title="About" handleClick={closeNavbar} />
+          </Nav>
+        </Collapse>
+      </Navbar>
+    </div>
+  );
+};
 
 CustomNavItem.propTypes = {
   title: PropTypes.string.isRequired,
