@@ -5,6 +5,19 @@ import { Collapse, Navbar, NavbarToggler, Nav, NavItem } from "reactstrap";
 import logo from "src/assets/images/logo/four-sixes-logo-with-text[250x100].svg";
 import "./style.scss";
 
+const CustomNavItem = ({ title, handleClick }) => {
+  const path = title.toLowerCase();
+  title = title.charAt(0).toUpperCase() + title.slice(1).toLowerCase();
+
+  return (
+    <NavItem>
+      <Link to={path} activeClassName="active" onClick={handleClick}>
+        {title}
+      </Link>
+    </NavItem>
+  );
+};
+
 class CustomNavbar extends React.Component {
   constructor(props) {
     super(props);
@@ -43,33 +56,10 @@ class CustomNavbar extends React.Component {
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
-              <NavItem>
-                <Link
-                  to="/products"
-                  activeClassName="active"
-                  onClick={this.closeNavbar}
-                >
-                  Products
-                </Link>
-              </NavItem>
-              <NavItem>
-                <Link
-                  to="/history"
-                  activeClassName="active"
-                  onClick={this.closeNavbar}
-                >
-                  History
-                </Link>
-              </NavItem>
-              <NavItem>
-                <Link
-                  to="/about"
-                  activeClassName="active"
-                  onClick={this.closeNavbar}
-                >
-                  About
-                </Link>
-              </NavItem>
+              <CustomNavItem title="Events" handleClick={this.closeNavBar} />
+              <CustomNavItem title="Products" handleClick={this.closeNavBar} />
+              <CustomNavItem title="History" handleClick={this.closeNavBar} />
+              <CustomNavItem title="About" handleClick={this.closeNavBar} />
             </Nav>
           </Collapse>
         </Navbar>
