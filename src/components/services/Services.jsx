@@ -1,7 +1,7 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 
-import Service from "./service";
+import Panel from "./panel";
 import "./style.scss";
 
 function Services() {
@@ -22,7 +22,7 @@ function Services() {
   return (
     <div className="services">
       {data.map(({ node }) => (
-        <Service key={node.key} title={node.title} desc={node.desc} />
+        <Panel key={node.key} title={node.title} desc={node.desc} />
       ))}
     </div>
   );

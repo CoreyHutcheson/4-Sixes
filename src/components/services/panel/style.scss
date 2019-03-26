@@ -1,6 +1,6 @@
 @import "src/utils/scss/_mixins.scss";
 
-.service {
+.panel {
   background: rgba(238, 238, 238, 0.75);
   color: #000;
   box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
@@ -60,7 +60,7 @@
 
 // Targeting non-mobile screens
 @media (min-width: 768px) {
-  .service {
+  .panel {
     flex: 1;
     max-width: 30%;
 

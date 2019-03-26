@@ -4,7 +4,7 @@ import { Link } from "gatsby";
 
 import "./style.scss";
 
-function Service({ title, desc }) {
+function Panel({ title, desc }) {
   const uniqueClass = title
     .toLowerCase()
     .trim()
@@ -13,17 +13,17 @@ function Service({ title, desc }) {
   return (
     <Link
       to={`/${title.toLowerCase()}`}
-      className={`service service__${uniqueClass}`}
+      className={`panel panel__${uniqueClass}`}
     >
-      <h3 className="service__title">{title}</h3>
-      <p className="service__description">{desc}</p>
+      <h3 className="panel__title">{title}</h3>
+      <p className="panel__description">{desc}</p>
     </Link>
   );
 }
 
-Service.propTypes = {
+Panel.propTypes = {
   title: PropTypes.string.isRequired,
   desc: PropTypes.string.isRequired,
 };
 
-export default Service;
+export default Panel;
