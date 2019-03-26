@@ -2,7 +2,7 @@ This project is a website for 4-Sixes Liquor Store - created by Corey Hutcheson
 
 ## TODO
 
-- [ ] Event Banner for upcoming events
+- [x] Event Banner for upcoming events
 - Event Page
   - [x] Email form
   - [ ] Taste Testing information
