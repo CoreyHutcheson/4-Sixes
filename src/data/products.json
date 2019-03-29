@@ -78,5 +78,13 @@
     "type": "Tequila",
     "desc": "Award winning, triple distilled, 100% blue webber agave tequila presented in a stunning anatomically correct glass heart bottle.",
     "newProduct": true
+  },
+  {
+    "key": 10,
+    "name": "Crown Royal Peach",
+    "img": "../assets/images/products/crown-royal-peach.jpg",
+    "type": "Whiskey",
+    "desc": "Bringing the lovely taste of summer into your life!",
+    "newProduct": true
   }
 ]
