@@ -24,7 +24,13 @@ const EventSection = () => {
   const futureEvents = events.filter(filterEvents);
 
   return futureEvents.map(({ node }) => (
-    <Event key={node.key} title={node.title} content={node.content_full} />
+    <Event
+      key={node.key}
+      title={node.title}
+      content={node.content_full}
+      start={node.start_date}
+      end={node.end_date}
+    />
   ));
 };
 
