@@ -28,8 +28,8 @@ const Faq = () => {
   `).allFaqJson.edges;
 
   return (
-    <>
-      <h2>Event FAQ</h2>
+    <div className="faq-container">
+      <h2 className="faq-container__title">Event FAQ</h2>
       <ul className="faq">
         {data.map(({ node }) => (
           <FaqElement
@@ -39,7 +39,7 @@ const Faq = () => {
           />
         ))}
       </ul>
-    </>
+    </div>
   );
 };
 
