@@ -9,6 +9,9 @@ const About = () => (
   <PageWrapper>
     <div className="page-content page-about">
       <ContactForm />
+      <div className="page-about__directions-text">
+        Check out the map below if you need help finding us!
+      </div>
       <GoogleMap />
     </div>
   </PageWrapper>
