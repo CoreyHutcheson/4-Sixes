@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <PageWrapper>
       <div className="page-content page-home">
-        <Banner link="about">SAVE $! Check out our Sales!</Banner>
+        <Banner link="events">SAVE $! Check out our Sales!</Banner>
         <EventBanner />
         <Carousel />
         <Services />
