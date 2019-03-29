@@ -21,7 +21,7 @@ function ContactForm() {
   return (
     <div className="form-container">
       <h2>Contact Us!</h2>
-      <p>
+      <p className="form__contact-text">
         If you have any questions or feedback, please don't hesitate to send us
         an email.
       </p>
