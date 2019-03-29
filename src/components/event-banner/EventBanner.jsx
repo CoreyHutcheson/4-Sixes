@@ -20,7 +20,7 @@ const EventBanner = () => {
   `).allEventsJson.edges;
 
   return events.filter(filterEvents).map(({ node }) => (
-    <Banner key={node.key} link="about">
+    <Banner key={node.key} link="events">
       {node.content_short}
     </Banner>
   ));
