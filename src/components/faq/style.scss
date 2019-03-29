@@ -27,6 +27,6 @@ $whitespace: 1rem;
   &__answer {
     margin: 0;
     padding-left: 2rem;
-    white-space: pre;
+    white-space: pre-wrap;
   }
 }
