@@ -4,7 +4,7 @@ import { useStaticQuery, graphql } from "gatsby";
 import Banner from "src/components/banner";
 import filterEvents from "src/utils/js/filterEvents";
 
-function EventBanner({}) {
+const EventBanner = () => {
   const events = useStaticQuery(graphql`
     query HomePageQuery {
       allEventsJson {
@@ -19,11 +19,11 @@ function EventBanner({}) {
     }
   `).allEventsJson.edges;
 
-  return events.filter(filterEvents).map(e => (
-    <Banner key={e.node.key} link="about">
-      {e.node.content_short}
+  return events.filter(filterEvents).map(({ node }) => (
+    <Banner key={node.key} link="about">
+      {node.content_short}
     </Banner>
   ));
-}
+};
 
 export default EventBanner;

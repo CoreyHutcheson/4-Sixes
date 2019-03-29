@@ -12,7 +12,7 @@ const FaqElement = ({ question, answer }) => (
   </li>
 );
 
-function Faq() {
+const Faq = () => {
   const data = useStaticQuery(graphql`
     query FaqQuery {
       allFaqJson {
@@ -31,16 +31,16 @@ function Faq() {
     <>
       <h2>Event FAQ</h2>
       <ul className="faq">
-        {data.map(el => (
+        {data.map(({ node }) => (
           <FaqElement
-            key={el.node.key}
-            question={el.node.question}
-            answer={el.node.answer}
+            key={node.key}
+            question={node.question}
+            answer={node.answer}
           />
         ))}
       </ul>
     </>
   );
-}
+};
 
 export default Faq;
