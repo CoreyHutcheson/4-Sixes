@@ -1,19 +1,47 @@
 import React from "react";
+import { useStaticQuery, graphql } from "gatsby";
+import Img from "gatsby-image";
 
-import productData from "./productData.js";
 import "./style.scss";
 
 const ProductPanel = ({ newProducts }) => {
-  const products = productData.filter(obj => obj.newProduct === newProducts);
+  const data = useStaticQuery(graphql`
+    query ProductQuery {
+      allProductsJson {
+        edges {
+          node {
+            key
+            name
+            type
+            desc
+            newProduct
+            img {
+              childImageSharp {
+                fluid {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  `).allProductsJson.edges;
 
-  return products.map(product => {
+  const products = data.filter(({ node }) => node.newProduct === newProducts);
+
+  return products.map(({ node }) => {
     return (
-      <div key={product.name} className="product">
-        <img className="product__img" src={product.img} alt={product.name} />
-        <div className="product__name">{product.name}</div>
-        <div className="product__type">{product.type}</div>
+      <div key={node.key} className="product">
+        <Img
+          className="product__img"
+          fluid={node.img.childImageSharp.fluid}
+          alt={node.name}
+        />
+        <div className="product__name">{node.name}</div>
+        <div className="product__type">{node.type}</div>
         <div className="product__desc">
-          <p>{product.desc}</p>
+          <p>{node.desc}</p>
           <span>Description:</span>
         </div>
       </div>

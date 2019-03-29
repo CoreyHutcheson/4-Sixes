@@ -1,0 +1,82 @@
+[
+  {
+    "key": 0,
+    "name": "Grey Goose",
+    "img": "../assets/images/products/grey-goose.jpg",
+    "type": "Vodka",
+    "desc": "A Single-origin French vodka, traceable from field to bottle for a naturally rich and full-bodied taste.",
+    "newProduct": false
+  },
+  {
+    "key": 1,
+    "name": "Jack Daniels",
+    "img": "../assets/images/products/jack-daniels.jpeg",
+    "type": "Whiskey",
+    "desc": "Known for its smooth, sweet and mild palate that opens with flavors of caramel, complemented by hints of spice, nuts and a touch of smoke",
+    "newProduct": false
+  },
+  {
+    "key": 2,
+    "name": "Amber Falls",
+    "img": "../assets/images/products/amber-falls.png",
+    "type": "Wine",
+    "desc": "Superb local wine from the vineyards in Hampshire, TN.",
+    "newProduct": false
+  },
+  {
+    "key": 3,
+    "name": "Captain Morgan",
+    "img": "../assets/images/products/captain-morgan.jpeg",
+    "type": "Rum",
+    "desc": "To Life, Love and Loot.",
+    "newProduct": false
+  },
+  {
+    "key": 4,
+    "name": "Balvenie",
+    "img": "../assets/images/products/balvenie.jpg",
+    "type": "Scotch",
+    "desc": "A 12 year old single malt whisky which gains it's distinctive character from being matured in two wood types.",
+    "newProduct": false
+  },
+  {
+    "key": 5,
+    "name": "Belle Meade",
+    "img": "../assets/images/products/belle-meade.jpg",
+    "type": "Bourbon",
+    "desc": "Prior to Prohibition, Belle Meade Bourbon was the choice of the discerning whiskey lover. The same is true today",
+    "newProduct": false
+  },
+  {
+    "key": 6,
+    "name": "Crystal Head Vodka",
+    "img": "../assets/images/products/crystal-head-vodka.jpg",
+    "type": "Vodka",
+    "desc": "Some of the smoothiest vodka in one of the slickest bottles!",
+    "newProduct": true
+  },
+  {
+    "key": 7,
+    "name": "Heavens Door",
+    "img": "../assets/images/products/heavens-door.jpg",
+    "type": "Whiskey",
+    "desc": "An award-winning collection of handcrafted American whiskey developed in partnership with Bob Dylan.",
+    "newProduct": true
+  },
+  {
+    "key": 8,
+    "name": "Jack Daniels Gold",
+    "img": "../assets/images/products/jack-daniels-gold.jpg",
+    "type": "Whiskey",
+    "desc": "Crafted to the same uncompromising standards as Old No. 7, but then twice charcoal mellowed to be luxuriously smooth.",
+    "newProduct": false
+  },
+  {
+    "key": 9,
+    "name": "Sangre de Vida",
+    "img": "../assets/images/products/vida-tequila-heart.jpg",
+    "type": "Tequila",
+    "desc": "Award winning, triple distilled, 100% blue webber agave tequila presented in a stunning anatomically correct glass heart bottle.",
+    "newProduct": true
+  }
+]
