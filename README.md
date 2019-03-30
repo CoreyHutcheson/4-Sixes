@@ -20,4 +20,4 @@ This project is a website for 4-Sixes Liquor Store - created by Corey Hutcheson
   - [ ] Non-Alcoholic items
     - picture showcasing the various items
 - History Page
-  - [ ] Replace filler with history of store
+  - [x] Replace filler with history of store

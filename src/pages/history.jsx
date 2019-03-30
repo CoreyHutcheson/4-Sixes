@@ -14,17 +14,17 @@ const History = () => (
       <HistoryPanel
         img={cards}
         altText="Pocket sixes cards."
-        text="Card Text Lorem ipsum dolor"
+        text="This store was won in a poker hand right? Similar statements are often heard, so here's a brief history of the origins of the store."
       />
       <HistoryPanel
         img={board}
         altText="Board showing two sixes to make quad sixes."
-        text="Board Text Lorem ipsum dolor sit"
+        text="James 'Tennessee Longoodie' Roy was a road gambler, famous for his No Limit poker playing skills. He is routinely mentioned in circles among poker legends, such as Doyle Brunson, Amarillo Slim, and Johnny Moss."
       />
       <HistoryPanel
         img={sign}
         altText="Four sixes sign outside of store."
-        text="Sign Text Lorem ipsum dolor sit amet"
+        text="James Roy could often be found traveling the country playing in some of the highest stakes games offered, and winning handily. Undoubtedly a hand that stood out to James Roy was one in which he scooped the pot with quad sixes (4 sixes) winning money which would go on to help him open this beloved liquor store, and spawn the legend that is still touted to this day!"
       />
     </div>
   </PageWrapper>
