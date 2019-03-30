@@ -8,11 +8,11 @@ const Event = ({ title, content, start, end }) => {
   const eventTime = getEventTime(start, end);
 
   return (
-    <div className="event">
+    <section className="event">
       <h2 className="event__title">{title}</h2>
       <div className="event__time">{eventTime}</div>
       <p className="event__content">{content}</p>
-    </div>
+    </section>
   );
 };
 

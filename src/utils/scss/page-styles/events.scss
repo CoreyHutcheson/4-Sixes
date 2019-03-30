@@ -5,11 +5,10 @@
   grid-gap: 2rem;
   justify-items: center;
   text-align: center;
-
   padding: 1rem;
 
-  &__wine-discount {
-    font-size: 1.2rem;
+  & > section:nth-child(odd) {
+    background: #eee;
   }
 }
 

@@ -1,0 +1,32 @@
+.event {
+  position: relative;
+  width: 100%;
+  margin: 1rem 0 0;
+  padding: 1rem;
+  border: 1px solid black;
+  border-radius: 5px;
+  max-width: 800px;
+
+  &__title {
+    padding: 0 10px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    background: white;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  &__time {
+    font-style: italic;
+    font-weight: 600;
+  }
+
+  &__content {
+    margin: 0;
+    font-size: 1.1rem;
+  }
+}

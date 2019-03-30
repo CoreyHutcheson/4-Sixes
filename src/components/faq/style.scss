@@ -3,13 +3,25 @@
 $whitespace: 1rem;
 
 .faq-container {
+  position: relative;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  margin: 1rem 0 0;
+  padding: 1rem;
+  border: 1px solid black;
+  border-radius: 5px;
+  max-width: 800px;
 
   &__title {
+    padding: 0 10px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    background: white;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    white-space: nowrap;
+    overflow: hidden;
   }
 }
 
@@ -19,8 +31,6 @@ $whitespace: 1rem;
   list-style: none;
   margin: 0;
   padding: $whitespace;
-  background: $color__secondary-background;
-  border: 1px solid $color__border;
   border-radius: 5px;
   text-align: left;
 
