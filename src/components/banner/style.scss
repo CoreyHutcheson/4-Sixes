@@ -1,22 +1,28 @@
+@import "src/utils/scss/variables";
+
 .banner {
-  background: #ffff00;
+  background: $color__banner--primary;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 40px;
 
   &:nth-child(even) {
-    background: darken(#ffff00, 10%);
+    background: $color__banner--secondary;
+
+    // & > .banner__link {
+    //   color: $color__banner-text;
+    // }
   }
 
   &__link {
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 700;
-    color: black;
+    color: $color__banner-text;
 
     &:hover {
-      color: black;
+      color: $color__banner-text;
       border-bottom: 2px solid black;
       font-size: 1.2rem;
     }
