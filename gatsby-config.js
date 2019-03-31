@@ -19,5 +19,14 @@ module.exports = {
         path: `${__dirname}/src/assets/images/products`,
       },
     },
+    {
+      resolve: "gatsby-source-wordpress",
+      options: {
+        baseUrl: "4sixes-liquor-store.local",
+        protocol: "http",
+        hostingWPCOM: false,
+        useACF: true,
+      },
+    },
   ],
 };
