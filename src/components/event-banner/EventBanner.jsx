@@ -6,22 +6,28 @@ import filterEvents from "src/utils/js/filterEvents";
 
 const EventBanner = () => {
   const events = useStaticQuery(graphql`
-    query HomePageQuery {
-      allEventsJson {
+    query AllEvents {
+      allWordpressWpEvents {
         edges {
           node {
-            key
-            end_date
-            content_short
+            wordpress_id
+            title
+            acf {
+              start_date
+              end_date
+              content_short
+              content_full
+            }
           }
         }
       }
     }
-  `).allEventsJson.edges;
+  `).allWordpressWpEvents.edges;
+  console.log(events);
 
   return events.filter(filterEvents).map(({ node }) => (
-    <Banner key={node.key} link="events">
-      {node.content_short}
+    <Banner key={node.wordpress_id} link="events">
+      {node.acf.content_short}
     </Banner>
   ));
 };
