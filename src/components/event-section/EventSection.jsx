@@ -1,35 +1,20 @@
 import React from "react";
-import { useStaticQuery, graphql } from "gatsby";
 
 import filterEvents from "src/utils/js/filterEvents";
 import Event from "./event";
+import { useWordpressEvents } from "src/utils/js/customHooks";
 
 const EventSection = () => {
-  const events = useStaticQuery(graphql`
-    query EventsQuery {
-      allEventsJson {
-        edges {
-          node {
-            key
-            start_date
-            end_date
-            title
-            content_short
-            content_full
-          }
-        }
-      }
-    }
-  `).allEventsJson.edges;
+  const events = useWordpressEvents();
   const futureEvents = events.filter(filterEvents);
 
   return futureEvents.map(({ node }) => (
     <Event
-      key={node.key}
+      key={node.wordpress_id}
       title={node.title}
-      content={node.content_full}
-      start={node.start_date}
-      end={node.end_date}
+      content={node.acf.content_full}
+      start={node.acf.start_date}
+      end={node.acf.end_date}
     />
   ));
 };
