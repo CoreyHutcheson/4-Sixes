@@ -7,7 +7,7 @@ import WineDiscount from "src/components/wine-discount";
 
 import "src/utils/scss/page-styles/events.scss";
 
-const EventsPage = ({ data }) => {
+const EventsPage = () => {
   return (
     <PageWrapper>
       <div className="page-content page-events">
