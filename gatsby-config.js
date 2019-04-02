@@ -22,7 +22,10 @@ module.exports = {
     {
       resolve: "gatsby-source-wordpress",
       options: {
-        baseUrl: "4sixes-liquor-store.local",
+        /* Home Computer - Local By Flywheel */
+        // baseUrl: "4sixes-liquor-store.local",
+        /* Work Computer - WAMP */
+        baseUrl: "4sixesliquor",
         protocol: "http",
         hostingWPCOM: false,
         useACF: true,
