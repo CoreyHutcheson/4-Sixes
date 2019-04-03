@@ -1,7 +1,7 @@
 import { useStaticQuery, graphql } from "gatsby";
 
 export const useWordpressEvents = () => {
-  const events = useStaticQuery(graphql`
+  const data = useStaticQuery(graphql`
     query WordpressEvents {
       allWordpressWpEvents {
         edges {
@@ -20,5 +20,5 @@ export const useWordpressEvents = () => {
     }
   `);
 
-  return events.allWordpressWpEvents.edges;
+  return data.allWordpressWpEvents.edges;
 };
