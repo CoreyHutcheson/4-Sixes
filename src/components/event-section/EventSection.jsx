@@ -2,7 +2,7 @@ import React from "react";
 
 import filterEvents from "src/utils/js/filterEvents";
 import Event from "./event";
-import { useWordpressEvents } from "src/utils/js/customHooks";
+import { useWordpressEvents } from "src/utils/js/custom-hooks/useWordpressEvents";
 
 const EventSection = () => {
   const events = useWordpressEvents();

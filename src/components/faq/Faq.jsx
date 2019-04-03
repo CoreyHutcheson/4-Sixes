@@ -1,6 +1,6 @@
 import React from "react";
-import { useStaticQuery, graphql } from "gatsby";
 
+import { useWordpressFaqs } from "src/utils/js/custom-hooks/useWordpressFaqs";
 import "./style.scss";
 
 const FaqElement = ({ question, answer }) => (
@@ -13,30 +13,15 @@ const FaqElement = ({ question, answer }) => (
 );
 
 const Faq = () => {
-  const data = useStaticQuery(graphql`
-    query FaqQuery {
-      allFaqJson {
-        edges {
-          node {
-            question
-            answer
-            key
-          }
-        }
-      }
-    }
-  `).allFaqJson.edges;
+  const data = useWordpressFaqs();
+  console.log(data);
 
   return (
     <section className="faq-container">
       <h2 className="faq-container__title">Event FAQ</h2>
       <ul className="faq">
-        {data.map(({ node }) => (
-          <FaqElement
-            key={node.key}
-            question={node.question}
-            answer={node.answer}
-          />
+        {data.map((el, index) => (
+          <FaqElement key={index} question={el.question} answer={el.answer} />
         ))}
       </ul>
     </section>

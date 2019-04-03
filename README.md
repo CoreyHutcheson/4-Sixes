@@ -32,7 +32,7 @@ This project is a website for 4-Sixes Liquor Store - created by Corey Hutcheson
 - Carousel
   - [ ] Re-write to incorporate React Hooks if possible
 - FAQ
-  - [ ] Query custom wordpress post type rather than faq.json file
+  - [x] Query custom wordpress post type rather than faq.json file
 - GoogleMap
   - [ ] Possibly find a way to pass API Key to version control without exposing
 - ProductPanel

@@ -2,7 +2,7 @@ import React from "react";
 
 import Banner from "src/components/banner";
 import filterEvents from "src/utils/js/filterEvents";
-import { useWordpressEvents } from "src/utils/js/customHooks";
+import { useWordpressEvents } from "src/utils/js/custom-hooks/useWordpressEvents";
 
 const EventBanner = () => {
   const events = useWordpressEvents();
