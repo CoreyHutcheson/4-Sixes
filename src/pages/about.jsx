@@ -3,7 +3,7 @@ import React from "react";
 import PageWrapper from "src/components/page-wrapper";
 import ContactForm from "src/components/contact-form";
 import GoogleMap from "src/components/google-map";
-import "src/utils/scss/page-styles/about.scss";
+import "src/utils/styles/page-styles/about.scss";
 
 const About = () => (
   <PageWrapper>

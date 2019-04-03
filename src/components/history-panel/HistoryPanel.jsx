@@ -1,8 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import "./style.scss";
-
 const HistoryPanel = ({ img, altText, text }) => (
   <>
     <div className="page-history__img-container">

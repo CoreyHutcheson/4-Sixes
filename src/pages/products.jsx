@@ -2,7 +2,7 @@ import React from "react";
 
 import PageWrapper from "src/components/page-wrapper";
 import ProductPanel from "src/components/product-panel";
-import "src/utils/scss/page-styles/products.scss";
+import "src/utils/styles/page-styles/products.scss";
 
 const Products = () => (
   <PageWrapper>

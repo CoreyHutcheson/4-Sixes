@@ -6,7 +6,7 @@ import cards from "src/assets/images/history/cards[sketch-1000x500].jpg";
 import board from "src/assets/images/history/board[sketch-1000x500].jpg";
 import sign from "src/assets/images/history/sign[sketch-1000x500].jpg";
 
-import "src/utils/scss/page-styles/history.scss";
+import "src/utils/styles/page-styles/history.scss";
 
 const History = () => (
   <PageWrapper>
