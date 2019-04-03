@@ -13,13 +13,6 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `product-images`,
-        path: `${__dirname}/src/assets/images/products`,
-      },
-    },
-    {
       resolve: "gatsby-source-wordpress",
       options: {
         /* Home Computer - Local By Flywheel */
