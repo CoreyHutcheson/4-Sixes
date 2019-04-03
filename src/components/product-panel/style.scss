@@ -5,6 +5,7 @@ $panel_background: #e5e5e5;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   width: 100%;
+  max-width: 500px;
   min-height: 100px;
   grid-gap: $spacing;
   padding: $spacing;

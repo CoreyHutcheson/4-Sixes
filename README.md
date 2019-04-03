@@ -37,7 +37,7 @@ This project is a website for 4-Sixes Liquor Store - created by Corey Hutcheson
   - [ ] Possibly find a way to pass API Key to version control without exposing
 - ProductPanel
   - [x] Extract data into products.json file
-    - [ ] Further extract into custom wordpress Products post type
+    - [x] Further extract into custom wordpress Products post type
 
 ## Utils
 
