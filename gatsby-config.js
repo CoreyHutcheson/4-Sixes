@@ -20,7 +20,7 @@ module.exports = {
         /* Work Computer - WAMP */
         // baseUrl: "4sixesliquor",
         /* Production - SiteGround Wordpress Installation */
-        baseUril: "4sixes.coreyhutcheson",
+        baseUrl: "4sixes.coreyhutcheson.com",
         protocol: "https",
         hostingWPCOM: false,
         useACF: true,
