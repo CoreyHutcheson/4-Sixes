@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/f2591d35-5197-40e8-ae80-2184b1776e12/deploy-status)](https://app.netlify.com/sites/4-sixes-liquor/deploys)
+
 This project is a website for 4-Sixes Liquor Store - created by Corey Hutcheson
 
 ## TODO
