@@ -16,10 +16,12 @@ module.exports = {
       resolve: "gatsby-source-wordpress",
       options: {
         /* Home Computer - Local By Flywheel */
-        baseUrl: "4sixes-liquor-store.local",
+        // baseUrl: "4sixes-liquor-store.local",
         /* Work Computer - WAMP */
         // baseUrl: "4sixesliquor",
-        protocol: "http",
+        /* Production - SiteGround Wordpress Installation */
+        baseUril: "4sixes.coreyhutcheson",
+        protocol: "https",
         hostingWPCOM: false,
         useACF: true,
       },
