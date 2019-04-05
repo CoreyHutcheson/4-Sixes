@@ -4,21 +4,8 @@ This project is a website for 4-Sixes Liquor Store - created by Corey Hutcheson
 
 ## TODO
 
-- [x] Event Banner for upcoming events
-
 ## Pages
 
-- Event Page
-  - [x] Email form
-  - [x] Taste Testing information
-  - [x] FAQ
-    - How much alcohol for a party of 20 people?
-    - etc
-- About Page
-  - [x] Discounts
-    - Wine Tuesday
-    - Specials (varies)
-  - [x] Google Maps API
 - Products Page
   - [ ] Custom Gift Baskets
   - [ ] Expanding Beer Selection
@@ -33,15 +20,9 @@ This project is a website for 4-Sixes Liquor Store - created by Corey Hutcheson
 
 - Carousel
   - [ ] Re-write to incorporate React Hooks if possible
-- FAQ
-  - [x] Query custom wordpress post type rather than faq.json file
 - GoogleMap
   - [ ] Possibly find a way to pass API Key to version control without exposing
-- ProductPanel
-  - [x] Extract data into products.json file
-    - [x] Further extract into custom wordpress Products post type
-
-## Utils
-
-- [ ] Rename scss folder to styles folder
-  - [ ] Fix all related imports
+- Drink Calculator
+  - [ ] Build a drink calculator
+- Product
+  - [ ] Build a filter system for the products based on category
