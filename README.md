@@ -23,6 +23,8 @@ This project is a website for 4-Sixes Liquor Store - created by Corey Hutcheson
 - GoogleMap
   - [ ] Possibly find a way to pass API Key to version control without exposing
 - Drink Calculator
-  - [ ] Build a drink calculator
+  - [x] Build a drink calculator
+    - Stored at /drink-calculator
+    - Used in FAQ
 - Product
   - [ ] Build a filter system for the products based on category

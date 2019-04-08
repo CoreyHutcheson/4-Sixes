@@ -7,14 +7,14 @@ const FaqElement = ({ question, answer }) => (
   <li className="faq__field-container">
     <details>
       <summary className="faq__question">{question}</summary>
-      <p className="faq__answer">{answer}</p>
+      {/* <p className="faq__answer">{answer}</p> */}
+      <p classname="faq__answer" dangerouslySetInnerHTML={{ __html: answer }} />
     </details>
   </li>
 );
 
 const Faq = () => {
   const data = useWordpressFaqs();
-  console.log(data);
 
   return (
     <section className="faq-container">
