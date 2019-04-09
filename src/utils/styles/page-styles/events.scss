@@ -1,7 +1,8 @@
 .page-events {
   display: grid;
-  grid-template-columns: 1;
+  grid-template-columns: 1fr;
   grid-template-rows: auto;
+  align-content: flex-start;
   grid-gap: 2rem;
   justify-items: center;
   text-align: center;
