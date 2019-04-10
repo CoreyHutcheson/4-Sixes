@@ -10,7 +10,7 @@ const Home = () => {
       <div className="page-content page-drink-calculator">
         <h2>Drink Calculator</h2>
         <p>
-          Planning an event? Let use help you decide how much you need to buy!
+          Planning an event? Let us help you decide how much you need to buy!
         </p>
         <DrinkCalculator />
       </div>
