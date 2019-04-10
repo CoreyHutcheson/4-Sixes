@@ -2,33 +2,27 @@
   margin: 2rem;
   border: 1px solid black;
   width: 100%;
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__output {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
-.drink-form-container {
-  display: flex;
-  flex-direction: column;
-}
-
-.input-container {
+.drink-calculator .input-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   padding: 1rem 0;
   width: 100%;
   border-bottom: 1px solid black;
-
-  &__header {
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-  }
-
-  &__input {
-    width: 50px;
-  }
-
-  &__choice-container {
-  }
 
   &__choice {
     display: flex;
@@ -40,43 +34,17 @@
   }
 }
 
-.drink-calculator__output {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.output {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1rem;
-  width: 100%;
-
-  & > div:nth-child(1) {
-    font-size: 1.2rem;
-    font-weight: 600;
-  }
-
-  & > div:nth-child(2) {
-    font-size: 0.8rem;
-  }
-
-  &:nth-of-type(odd) {
-    background: #ddd;
-  }
-}
-
 @media (min-width: 600px) {
-  .drink-form-container {
-    flex-direction: row;
+  .drink-calculator {
+    &__form {
+      flex-direction: row;
+    }
+    &__output {
+      flex-direction: row;
+    }
   }
 
   .input-container:not(:last-child) {
     border-right: 1px solid black;
-  }
-
-  .drink-calculator__output {
-    flex-direction: row;
   }
 }

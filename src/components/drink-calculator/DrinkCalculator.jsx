@@ -1,67 +1,10 @@
 import React, { useState, useEffect } from "react";
 
 import "./style.scss";
-
-const Input = ({ header, label, name, value, handleChange }) => {
-  return (
-    <div className="input-container">
-      <div className="input-container__header">{header}</div>
-      <div>
-        <input
-          className="input-container__input"
-          type="number"
-          id={name}
-          value={value}
-          onChange={handleChange}
-        />
-        <label className="input-container__label" htmlFor={name}>
-          {label}
-        </label>
-      </div>
-    </div>
-  );
-};
-
-const CheckboxSelection = ({ categories, handleChange }) => {
-  return (
-    <div className="input-container">
-      <div className="input-container__header">Serving</div>
-      <div className="input-container__choice-container">
-        <div className="input-container__choice">
-          <input
-            type="checkbox"
-            id="beer"
-            checked={categories.beer}
-            onChange={handleChange}
-          />
-          <label htmlFor="beer">Beer</label>
-        </div>
-        <div className="input-container__choice">
-          <input
-            type="checkbox"
-            id="wine"
-            checked={categories.wine}
-            onChange={handleChange}
-          />
-          <label htmlFor="wine">Wine</label>
-        </div>
-        <div className="input-container__choice">
-          <input
-            type="checkbox"
-            id="liquor"
-            checked={categories.liquor}
-            onChange={handleChange}
-          />
-          <label htmlFor="liquor">Liquor</label>
-        </div>
-      </div>
-    </div>
-  );
-};
-
-const getDrinks = (visitors, duration) => {
-  return 2 * visitors + visitors * (duration - 1);
-};
+import getDrinks from "./utils/getDrinks";
+import Input from "./sub-components/input";
+import CheckboxSelection from "./sub-components/CheckboxSelection.jsx";
+import DrinkOutputPanel from "./sub-components/drink-output-panel";
 
 const DrinkCalculator = () => {
   const [visitors, setVisitors] = useState(10);
@@ -119,12 +62,14 @@ const DrinkCalculator = () => {
 
   return (
     <div className="drink-calculator">
-      <form className="drink-form-container">
+      <form className="drink-calculator__form">
         <Input
           header="Guest Count"
           label="Guests"
           name="visitors"
           value={visitors}
+          increaseFunc={() => setVisitors(prev => prev + 1)}
+          decreaseFunc={() => setVisitors(prev => prev - 1)}
           handleChange={e => setVisitors(+e.target.value)}
         />
         <Input
@@ -132,6 +77,8 @@ const DrinkCalculator = () => {
           label="Hours"
           name="duration"
           value={duration}
+          increaseFunc={() => setDuration(prev => prev + 1)}
+          decreaseFunc={() => setDuration(prev => prev - 1)}
           handleChange={e => setDuration(+e.target.value)}
         />
         <CheckboxSelection
@@ -140,19 +87,13 @@ const DrinkCalculator = () => {
         />
       </form>
 
-      <div className="drink-calculator__output">
-        <div className="output">
-          <div>{beerAmount}</div>
-          <div>Bottles/Cans of Beer</div>
-        </div>
-        <div className="output">
-          <div>{wineAmount}</div>
-          <div>Bottles of Wine (750ml)</div>
-        </div>
-        <div className="output">
-          <div>{liquorAmount}</div>
-          <div>Bottles of Liquor (750ml)</div>
-        </div>
+      <div className="drink-calculator__output output">
+        <DrinkOutputPanel count={beerAmount} text="Bottles/Cans of Beer" />
+        <DrinkOutputPanel count={wineAmount} text="Bottles of Wine (750ml)" />
+        <DrinkOutputPanel
+          count={liquorAmount}
+          text="Bottles of Liquor (750ml)"
+        />
       </div>
     </div>
   );
