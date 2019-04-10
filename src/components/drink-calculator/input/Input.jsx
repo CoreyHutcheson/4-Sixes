@@ -17,18 +17,20 @@ const Input = ({
     <div className="input-container input">
       <div className="input__header">{header}</div>
       <div className="input__content-container">
-        <Button callback={decreaseFunc}>-</Button>
-        <input
-          className="input__content"
-          type="number"
-          id={name}
-          value={value}
-          onChange={handleChange}
-        />
+        <div>
+          <Button callback={decreaseFunc}>-</Button>
+          <input
+            className="input__content"
+            type="number"
+            id={name}
+            value={value}
+            onChange={handleChange}
+          />
+          <Button callback={increaseFunc}>+</Button>
+        </div>
         <label className="input__label" htmlFor={name}>
           {label}
         </label>
-        <Button callback={increaseFunc}>+</Button>
       </div>
     </div>
   );
