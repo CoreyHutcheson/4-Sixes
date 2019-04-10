@@ -2,9 +2,9 @@ import React, { useState, useEffect } from "react";
 
 import "./style.scss";
 import getDrinks from "./utils/getDrinks";
-import Input from "./sub-components/input";
-import CheckboxSelection from "./sub-components/CheckboxSelection.jsx";
-import DrinkOutputPanel from "./sub-components/drink-output-panel";
+import Input from "./input";
+import CheckboxSelection from "./checkbox-selection";
+import DrinkOutputPanel from "./drink-output-panel";
 
 const DrinkCalculator = () => {
   const [visitors, setVisitors] = useState(10);
