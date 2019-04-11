@@ -8,7 +8,7 @@ const FaqElement = ({ question, answer }) => (
     <details>
       <summary className="faq__question">{question}</summary>
       {/* <p className="faq__answer">{answer}</p> */}
-      <p classname="faq__answer" dangerouslySetInnerHTML={{ __html: answer }} />
+      <p className="faq__answer" dangerouslySetInnerHTML={{ __html: answer }} />
     </details>
   </li>
 );
