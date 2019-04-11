@@ -12,7 +12,7 @@ const Products = () => (
         <ProductPanel newProducts={true} />
       </div>
 
-      <div className="page-products__header">Products</div>
+      <div className="page-products__header">Hot</div>
       <div className="page-products__products-grid">
         <ProductPanel newProducts={false} />
       </div>
